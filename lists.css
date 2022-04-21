@@ -1,0 +1,31 @@
+dd{ 
+    color: goldenrod;       
+}
+li:nth-child(odd){
+    background-color: gray;
+}  
+/*unicode characters*/
+#shamrock,#crescent,#spade,#libra,#king,#queen,#pisces{
+    list-style-type: none;
+}
+#shamrock::before{
+    content: '\2618';
+}
+#crescent::before{
+    content: '\262A';
+}
+#spade::before{
+    content: '\2660';
+}
+#libra::before{
+    content: '\264E';
+}
+#king::before{
+    content: '\2654';
+}
+#queen::before{
+    content: '\2655';
+}
+#pisces::before{
+    content: '\2653';
+}
