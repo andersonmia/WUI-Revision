@@ -1,5 +1,35 @@
 table,th,tr,td{
     border: 2px blue solid;
-    border-collapse: collapse;
+    border-collapse: collapse;    
     background-color: white;
 }
+tr:hover{
+    color: red;
+}
+.odd{
+    border: 2px blue solid;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+table.odd{
+    text-align: left;
+}
+/* horizontal dividers */
+.unique{
+    margin: 15px;
+}
+.unique,.divide{
+    border: none;
+}
+.divide{
+    border-bottom: 3px solid blue;
+    padding: 10px;
+}
+/* responsive tables */
+#responsive{
+    width: 120%;
+}
+.responsive{
+    overflow-x: auto;
+}
+/* .responsive is the class for the div that holds the table to be made responsive */
