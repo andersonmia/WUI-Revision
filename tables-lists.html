@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML tables and lists reviewed</title>
+    <link rel="stylesheet" href="tables.css">
+    <link rel="stylesheet" href="lists.css">
     <style>
         *{
             background-color: aliceblue;
@@ -18,18 +20,9 @@
         h3{
             color: orangered;
         }
-        table,th,tr,td{
-            border: 2px blue solid;
-            border-collapse: collapse;
-            background-color: white;
-        }
-        dd{
-            color: goldenrod;
-        }
-        li:nth-child(odd){
-            background-color: gray;
-        }  
-   
+        h4{
+            color: chartreuse;
+        }       
     </style>
 </head>
 <body>
@@ -262,5 +255,19 @@
         <li>Nyarugenge</li>
         <li>Kicukiro</li>
     </ul>
+    <h4>Using unicode characters</h4>
+    <ul>
+        <li id="pisces"> Pisces</li>
+        <li id="spade"> Spade</li>
+        <li id="shamrock"> Shamrock</li>
+        <li id="crescent"> Star and Crescent</li>
+        <li id="king"> Chess King</li>
+        <li id="queen"> Chess Queen</li>
+        <li id="libra"> Libra</li>
+    </ul>
+    <!-- to use images as bullets
+    ul {
+    list-style-image: url('sqpurple.gif');
+    } -->
 </body>
 </html>
