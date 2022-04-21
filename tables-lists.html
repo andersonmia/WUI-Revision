@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tables and lists reviewed</title>
+    <style>
+        *{
+            background-color: aliceblue;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: blueviolet;
+        }
+        h3{
+            color: orangered;
+        }
+        table,th,tr,td{
+            border: 2px blue solid;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        dd{
+            color: goldenrod;
+        }
+        li:nth-child(odd){
+            background-color: gray;
+        }  
+   
+    </style>
+</head>
+<body>
+    <h1>HTML tables</h1>
+    <h2>First table</h2>
+    <table border=1 cellspacing=0, cellpadding=3 width="400px">
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Province</th>
+                <th>District</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Kigali city</td>
+                <td>Gasabo</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Kigali city</td>
+                <td>Nyarugenge</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Kigali </td>
+                <td>Kicukiro</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Western Province</td>
+                <td>Nyabihu</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>Western Province</td>
+                <td>Rubavu</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <h2>Second table</h2>
+    <table border="1" cellspacing="0" cellpadding="3" width="400px"> 
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Province</th>
+                <th>District</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td rowspan="3">Kigali City</td>
+                <td>Gasabo</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Kicukiro</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Nyarugenge</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td rowspan="2">Western Province</td>
+                <td>Nyabihu</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Rubavu</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Third table</h2>
+    <table border="1" cellspacing="0" cellpadding="3" width="800px">
+        <thead>
+            <tr>
+                <th colspan="2">0-15</th>
+                <th colspan="2">16-25</th>
+                <th colspan="2">26-35</th>
+                <th colspan="2">36-45</th>
+                <th colspan="2">46-55</th>
+                <th colspan="2">56-above</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Men</td>
+                <td>Women</td>
+                <td>Men</td>
+                <td>Women</td>
+                <td>Men</td>
+                <td>Women</td>
+                <td>Men</td>
+                <td>Women</td>
+                <td>Men</td>
+                <td>Women</td>
+                <td>Men</td>
+                <td>Women</td>
+            </tr>
+            <tr>
+                <td>800</td>
+                <td>700</td>
+                <td>800</td>
+                <td>700</td>
+                <td>800</td>
+                <td>700</td>
+                <td>800</td>
+                <td>700</td>
+                <td>800</td>
+                <td>700</td>
+                <td>800</td>
+                <td>700</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="2">1500</th>
+            <th colspan="2">1500</th>
+            <th colspan="2">1500</th>
+            <th colspan="2">1500</th>
+            <th colspan="2">1500</th>
+            <th colspan="2">1500</th>
+        </tfoot>
+    </table>
+    <h2>Fourth table</h2>
+    <table border="1" cellspacing="0" cellpadding="3" width="400px">
+        <thead>
+            <tr>
+                <th>School</th>
+                <th>id</th>
+                <th>Name</th>
+                <th>subject</th>
+                <th>score</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">RCA</td>
+                <td>1</td>
+                <td>John</td>
+                <td>Math</td>
+                <td>5</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mary</td>
+                <td>Math</td>
+                <td>10</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Clarisse</td>
+                <td>English</td>
+                <td>7</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kalisa</td>
+                <td>Math</td>
+                <td>8</td>
+                <td>80%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <th>30</th>
+                <th>75%</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>HTML lists</h1>
+    <h2>Ordered lists</h2>
+    <h3>Numbered Ordered lists</h3>  
+    <ol type="1">
+        <li>Gasabo</li>
+        <li>Nyarugenge</li>
+        <li>Kicukiro</li>
+    </ol> 
+    <ol type="I">
+        <li>Gasabo</li>
+        <li>Nyarugenge</li>
+        <li>Kicukiro</li>
+    </ol> 
+    <ol type="i">
+        <li>Gasabo</li>
+        <li>Nyarugenge</li>
+        <li>Kicukiro</li>
+    </ol>
+    <h3>Alphabetically Ordered lists</h3>
+    <ol type="A">
+        <li>Gasabo</li>
+        <li>Nyarugenge</li>
+        <li>Kicukiro</li>
+    </ol>
+    <ol type="a">
+        <li>Gasabo</li>
+        <li>Nyarugenge</li>
+        <li>Kicukiro</li>
+    </ol>
+    <h2>Descriptive lists</h2>      
+    <dl>
+        <dt>Gasabo</dt>
+        <dd>First District in Kigali</dd>
+        <dt>Kicukiro</dt>
+        <dd>Second District in Kigali</dd>
+        <dt>Nyarugenge</dt>
+        <dd>Third District in Kigali</dd>
+    </dl>
+    <h2>Unordered lists</h2>
+    <ul type="disc">
+        <li>Gasabo</li>
+        <li>Nyarugenge</li>
+        <li>Kicukiro</li>
+    </ul>
+    <ul type="circle">
+        <li>Gasabo</li>
+        <li>Nyarugenge</li>
+        <li>Kicukiro</li>
+    </ul>
+    <ul type="square">
+        <li>Gasabo</li>
+        <li>Nyarugenge</li>
+        <li>Kicukiro</li>
+    </ul>
+</body>
+</html>
