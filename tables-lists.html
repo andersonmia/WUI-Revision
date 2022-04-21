@@ -22,13 +22,18 @@
         }
         h4{
             color: chartreuse;
-        }       
+        } 
+        caption{
+            caption-side: bottom;
+            color: red;
+        }    
     </style>
 </head>
 <body>
     <h1>HTML tables</h1>
-    <h2>First table</h2>
-    <table border=1 cellspacing=0, cellpadding=3 width="400px">
+    <h2>First table</h2>    
+    <table border=1 cellspacing=0, cellpadding=3 width="400px" class="odd">
+        <caption>Table.Anderson's</caption>
         <thead>
             <tr>
                 <th>Number</th>
@@ -65,8 +70,9 @@
 
         </tbody>
     </table>
-    <h2>Second table</h2>
+    <h2>Second table</h2>    
     <table border="1" cellspacing="0" cellpadding="3" width="400px"> 
+        <caption>Table.Anderson's</caption>
         <thead>
             <tr>
                 <th>Code</th>
@@ -76,7 +82,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>101</td>
+                <td class="divide">101</td>
                 <td rowspan="3">Kigali City</td>
                 <td>Gasabo</td>
             </tr>
@@ -99,8 +105,9 @@
             </tr>
         </tbody>
     </table>
-    <h2>Third table</h2>
-    <table border="1" cellspacing="0" cellpadding="3" width="800px">
+    <h2>Third table</h2>    
+    <table border="1" cellspacing="0" cellpadding="3" width="800px" class="odd">
+        <caption>Table.Anderson's</caption>
         <thead>
             <tr>
                 <th colspan="2">0-15</th>
@@ -150,8 +157,9 @@
             <th colspan="2">1500</th>
         </tfoot>
     </table>
-    <h2>Fourth table</h2>
+    <h2>Fourth table</h2>    
     <table border="1" cellspacing="0" cellpadding="3" width="400px">
+        <caption>Table.Anderson's</caption>
         <thead>
             <tr>
                 <th>School</th>
@@ -201,6 +209,174 @@
             </tr>
         </tfoot>
     </table>
+    <h2>Table Horizontal Dividers</h2>    
+    <table class="unique"border="1" cellspacing="0" cellpadding="3" width="400px">
+        <caption>Table.Anderson's</caption>
+        <thead>
+            <tr>
+                <th class="divide">School</th>
+                <th class="divide">id</th>
+                <th class="divide">Name</th>
+                <th class="divide">subject</th>
+                <th class="divide">score</th>
+                <th class="divide">Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="divide" rowspan="4">RCA</td>
+                <td class="divide">1</td>
+                <td class="divide">John</td>
+                <td class="divide">Math</td>
+                <td class="divide">5</td>
+                <td class="divide">50%</td>
+            </tr>
+            <tr>
+                <td class="divide">2</td>
+                <td class="divide">Mary</td>
+                <td class="divide">Math</td>
+                <td class="divide">10</td>
+                <td class="divide">100%</td>
+            </tr>
+            <tr>
+                <td class="divide">3</td>
+                <td class="divide">Clarisse</td>
+                <td class="divide">English</td>
+                <td class="divide">7</td>
+                <td class="divide">70%</td>
+            </tr>
+            <tr>
+                <td class="divide">4</td>
+                <td class="divide">Kalisa</td>
+                <td class="divide">Math</td>
+                <td class="divide">8</td>
+                <td class="divide">80%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="divide" colspan="4">Total</th>
+                <th class="divide">30</th>
+                <th class="divide">75%</th>
+            </tr>
+        </tfoot>
+    </table>    
+    <table class="unique" border="1" cellspacing="0" cellpadding="3" width="400px">
+        <caption>Table.Anderson's</caption>
+        <thead>
+            <tr>
+                <th class="divide">School</th>
+                <th class="divide">id</th>
+                <th class="divide">Name</th>
+                <th class="divide">subject</th>
+                <th class="divide">score</th>
+                <th class="divide">Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="divide" rowspan="4">RCA</td>
+                <td class="divide">1</td>
+                <td class="divide">John</td>
+                <td class="divide">Math</td>
+                <td class="divide">5</td>
+                <td class="divide">50%</td>
+            </tr>
+            <tr>
+                <td class="divide">2</td>
+                <td class="divide">Mary</td>
+                <td class="divide">Math</td>
+                <td class="divide">10</td>
+                <td class="divide">100%</td>
+            </tr>
+            <tr>
+                <td class="divide">3</td>
+                <td class="divide">Clarisse</td>
+                <td class="divide">English</td>
+                <td class="divide">7</td>
+                <td class="divide">70%</td>
+            </tr>
+            <tr>
+                <td class="divide">4</td>
+                <td class="divide">Kalisa</td>
+                <td class="divide">Math</td>
+                <td class="divide">8</td>
+                <td class="divide">80%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="divide" colspan="4">Total</th>
+                <th class="divide">30</th>
+                <th class="divide">75%</th>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Responsive tables</h2>
+    <div class="responsive">        
+        <table id="responsive">
+            <caption>Table.Anderson's</caption>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Math</th>
+                <th>PHP</th> <th>Network</th>
+                <th>GUI</th>
+                <th>WUI</th>
+                <th>Javascript</th>
+                <th>Database</th>
+              <th>ENglish</th>
+              <th>Progr.-C</th>
+              <th>Computer Basics</th>
+            </tr>
+
+            <tr>
+                <td>Manzi</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>50</td>	<td>50</td>
+                <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+              <td>50</td>
+            </tr>
+
+            <tr>
+                <td>Mugabo</td>
+                <td>Claude</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+              <td>94</td>
+            </tr>
+
+            <tr>
+                <td>Hirwa</td>
+                <td>Angel</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td>
+              <td>67</td></tr>
+
+          </table>
+        
+    </div> 
+    
     <h1>HTML lists</h1>
     <h2>Ordered lists</h2>
     <h3>Numbered Ordered lists</h3>  
