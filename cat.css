@@ -1,0 +1,30 @@
+body{
+    background-color: greenyellow;
+}
+.container{
+    width: 80vw;
+    display: flex;  
+    margin: auto;  
+    background-color: white;
+}
+table{
+    display: block;    
+    max-height: 50%;
+    width: 100%;
+    border: none;
+    border-spacing: 0px;
+    background-color: white;   
+    overflow-y: scroll; 
+}
+th{
+    background-color: #D8BFD8;
+}
+tr:nth-child(odd){
+    background-color: lavender;
+}
+tr:hover{
+    background-color: aliceblue;
+}
+td,th,tr{
+    border-bottom: 2px solid gray;
+}
