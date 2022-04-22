@@ -1,0 +1,51 @@
+#center{
+    text-align: center;
+}
+#left{
+    text-align: left;
+}
+#right{
+    text-align: right;
+}
+
+em{
+    background-color: chartreuse;
+}
+#baseline{
+    vertical-align: baseline;
+}
+#sub{
+    vertical-align: sub;
+}
+#super{
+    vertical-align: super;
+}
+#top{
+    vertical-align: top;
+}
+#bottom{
+    vertical-align: bottom;
+}
+#text-bottom{
+    vertical-align: text-bottom;
+}
+.align{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    background-color: gray;  
+    color: white; 
+    shape-outside: circle();
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+}
+p{
+    text-align: justify;
+    font-size: 22px;
+}
+article{
+    display: inline-block;
+    padding-top: 40%;
+}
